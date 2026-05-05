@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://swadesi-shopping-website-backend.onrender.com/api';
 
 export const fetchProducts = async (search = '') => {
   const url = search ? `${API_URL}/products?search=${search}` : `${API_URL}/products`;
