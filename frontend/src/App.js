@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import Login from './modules/Login';
 import Signup from './modules/Signup';
 import AdminDashboard from './modules/Admin';
+import About from './modules/About';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
         <Route path="/admin" element={<AdminDashboard/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
         <Route path="*" element={<div className="h-[60vh] flex justify-center items-center text-4xl text-gray-700">404 - Page Not Found</div>} />
       </Routes>
       <Footer/>
